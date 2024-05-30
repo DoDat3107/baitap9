@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n = +prompt("Nhập số n:");
+
+        if (n < 3) {
+            document.write("N nhập không được nhỏ hơn 3");
+        } else {
+            let fn1 = 1;
+            let fn2 = 1;
+
+            document.write(fn1 + "<br>");
+            document.write(fn2 + "<br>");
+
+            for (let i = 3; i <= n; i++) {
+                let fn = fn1 + fn2;
+                document.write(fn + "<br>");
+
+             let   fn1 = fn2;
+             let   fn2 = fn;
+            }
+        }
+    </script>
+</body>
+</html>

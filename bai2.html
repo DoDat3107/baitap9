@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = prompt("Nhập câu:");
+        //trim() được sử dụng để loại bỏ khoảng trắng ở đầu và cuối chuỗi.
+        let soTu = a.trim().split(/\s+/).length; // Đếm số từ
+        // split(/\s+/) được sử dụng để tách chuỗi thành các từ dựa trên khoảng trắng và đếm số lượng từ.
+
+        // Đếm số ký tự (loại bỏ khoảng trắng)
+        let soKyTu = a.replace(/\s/g, '').length; // replace(/\s/g, '') được sử dụng để loại bỏ tất cả các khoảng trắng trong chuỗi và đếm số ký tự còn lại.
+        document.write("Số từ: " + soTu + "<br>");
+        document.write("Số ký tự: " + soKyTu);
+    </script>
+</body>
+</html>

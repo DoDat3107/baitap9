@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>document</title>
+    </head>
+    <body>
+        <script>
+            let a = +prompt("Nhập số nguyên dương a:");
+            let b = +prompt("Nhập số nguyên dương b:");
+    
+            if (a <= 0 || b <= 0 || isNaN(a) || isNaN(b)) {
+                document.write("Vui lòng nhập hai số nguyên dương.");
+            } else {
+                let Le = 0;
+                let Chan = 0;
+    
+                for (let i = a; i <= b; i++) {
+                    if (i % 2 === 0) {
+                        Chan = Chan + i; // Nếu là số chẵn, thêm vào tổng số chẵn
+                    } else {
+                        Le =Le+ i; // Nếu là số lẻ, thêm vào tổng số lẻ
+                    }
+                }
+    
+                document.write("Tổng các số lẻ từ " + a + " đến " + b + " là: " + Le + "<br>");
+                document.write("Tổng các số chẵn từ " + a + " đến " + b + " là: " + Chan);
+            }
+        </script>
+    </body>
+    </html>
+    
+</body>
+</html>
